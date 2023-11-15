@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="gradient-background">
     
     <div class="fixed-top" style="background-color: #ffb335;">
         <nav class="navbar navbar-expand-lg container" data-bs-theme="dark" style="background-color: #ffb335;">
           <div class="container-fluid">        
-            <img src="images/ClienSo Logo.png" alt="logo" height="30"> 
+            <img src="images/logo only.png" alt="logo" height="40">
             <h1 class="navbar-brand mx-2 my-auto" style="font-size: 30px;">ClienSo</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
         </nav>
       </div>
 
-      <div class="container-fluid gradient-background">
+      <div class="container-fluid ">
 
         <div class="container col-xxl-8 px-4 py-5 ">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -81,10 +81,47 @@
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#modal-personal" >Llámenos hoy mismo</button>            
           </div>
-        </div>
-        
+        </div>        
       </div>
 
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Ofrecemos una amplia gama de servicios de tecnología</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <img src="./images/consultoria.png" alt="">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Consultoría: </h3>
+                <p class="lead mb-4">Le ayudamos a evaluar sus necesidades tecnológicas y a desarrollar un plan para satisfacerlas.</p>
+                
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <img src="./images/implementacion.png" alt="">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Implementación: </h3>
+                <p class="lead mb-4">Instalamos y configuramos su equipo y software tecnológico.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <img src="./images/soporte.png" alt="">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Soporte: </h3>
+                <p class="lead mb-4">Le proporcionamos asistencia técnica para que su equipo tecnológico funcione correctamente.</p>                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 <!-- MODAL -->
 <div class="modal fade" id="modal-personal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
   <div class="modal-dialog ">
@@ -95,13 +132,14 @@
       </div>
       <div class="modal-body azul">
         
-        <p class=" english"> En <span class="naranja">ClienSO</span> nos interesa saber más sobre tus nececidades  <br>
+        <p class=" english"> En <span class="naranja">ClienSO</span> nos interesa saber más sobre sus necesidades  <br>
 
           Llámenos hoy mismo para saber cómo podemos ayudarle <br> a mejorar su negocio con la tecnología. <br><br>
-
-          Centrales telefónica: <br> 
-          &emsp13;&emsp13; 4000-0010 <br>
-          &emsp13;&emsp13; 4000-1002 <br>
+          <hr>
+          Centrales telefónicas: <br> 
+          &emsp13;&emsp13; (506) X000-0010 <br>
+          &emsp13;&emsp13; (506) X000-1011 <br> <br>
+          <hr>
           Correo-e: <br>
           &emsp13;&emsp13; Ventas@ClienSO.co.cr <br>
           &emsp13;&emsp13; Soporte@ClienSO.co.cr <br>
@@ -112,29 +150,24 @@
   </div>
 </div>
 
+<div style="background-color: transparent;" id="footer">
+
+  <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 " data-bs-theme="dark">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-primary text-decoration-none lh-1">
+        <img src="./images/logo only.png" height="50">
+      </a>
+      <span class="mb-3 mb-md-0 px-3 text-body-primary espanol hidden"> Clienso, Inc © 2023<br> Todos los derechos reservados</span>      
+    </div>
+    <span class="mb-3 mb-md-0 text-body-primary" id="id-mail"> Soporte@ClienSO.co.cr</span>
+  </footer>
+
+</div>
 
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 </body>
-<div style="background-color: #ffb335;" id="footer">
-
-  <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 " data-bs-theme="dark">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-primary text-decoration-none lh-1">
-        <img src="./images/logo only.png" height="30">
-      </a>
-      <span class="mb-3 mb-md-0 px-3 text-body-primary espanol hidden"> Clienso, Inc © 2023<br> Todos los derechos reservados</span>      
-    </div>
-    <span class="mb-3 mb-md-0 text-body-primary" id="id-mail"> Support@ClienSO.co.cr</span>
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      
-      
-     
-    </ul>
-  </footer>
-
-</div>
 
 </html>
