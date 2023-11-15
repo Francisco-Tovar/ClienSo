@@ -1,0 +1,242 @@
+/* CLOWN PALETTE 
+primario = #ffcd35
+secundario = #31230a
+complementario = #d25434 
+oscuro = #1f1f1f
+claro = #d9d9d9
+
+*/
+
+html{
+    
+    scroll-behavior: smooth;
+    background-color: #ffb335;
+}
+
+body{
+  font-family: Roboto, sans-serif !important;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #d25434, #ffb335, #31230a);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.blanco{
+  color: #d9d9d9 !important;
+}
+
+.morado{
+  color: #ffcd35 !important;
+}
+
+.azul{
+  color: #31230a !important;
+}
+
+.naranja{
+  color: #d25434 !important;
+}
+
+#btn-lang{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.langbutton{
+  padding: 1px;
+  margin: 5px;
+}
+
+.langicon{
+  height: 30px;
+  width: auto;
+}
+.langicon:hover{
+  box-shadow: 0 5px 15px #d25434;
+}
+
+hr{
+    background-color: #d25434;
+    height: 5px;
+    width: 50%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.icono{
+    padding: 10px;
+    height: 60px;
+    width: auto;
+}
+
+.btn-primary{
+  background-color: #d25434;
+  border-color: #ffcd35;
+  border: 1px solid;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #1f1f1f;
+  background-color: #ffcd35;
+  border-color: #d25434; /*set the color you want here*/
+}
+
+.carousel-item{
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  display: none;
+  border-color: #d25434;
+  height: auto;
+  background-color: #d25434;
+  border: solid 2px;
+  border-radius: 20%;
+  opacity: 0.25;
+}
+
+#btn-back-to-top:hover {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  display: none;
+  border-color: #ffcd35;
+  height: auto;
+  background-color: #ffcd35;
+  border-radius: 20%;
+  opacity: 1;
+}
+
+#myAliceWebChat{
+  opacity: 0.25;
+}
+
+#myAliceWebChat:hover{
+  opacity: 1;
+}
+
+.modal-body{
+  text-align: justify;
+}
+
+.lottie-player{
+  height: 100px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+
+.social:hover{
+
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #d25434;
+}
+
+.nav-link{
+  color: #d25434;
+}
+
+.nav-link:hover{
+  color: #d9d9d9;
+}
+
+.carousel-caption{
+  background-color: #ffffff7e;
+  border-radius: 7px;
+  max-width: 40%;
+  margin: auto;
+  margin-bottom: -10px;
+}
+
+.carousel-caption  p{
+  font-size: larger;
+  line-height: 25%;
+  color: #164087 !important;
+}
+
+#avatarperfil{
+  border: 5px  #d25434 !important;
+  border-radius: 5%;
+  overflow: hidden;
+  border-bottom: inset;
+}
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+
+}
+
+
+@media (max-width: 1400px) {
+
+  .carousel-caption  p {
+    font-size: medium;
+  }
+    
+  .carousel-caption  hr {
+    height: 2px;
+  }
+  
+}
+
+
+@media (max-width: 1200px) {
+
+  .carousel-caption  p {
+    display: none;
+  }
+    
+  .carousel-caption  hr {
+    display: none;
+  }
+}
+
+@Media (max-width: 768px){
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: calc(50% - 30px);           
+  }
+  
+  #btn-back-to-top:hover {
+    position: fixed;
+    bottom: 50px;
+    right: calc(50% - 30px);              
+  }
+
+  footer #id-mail{
+    display: none;
+  }
+  footer img {
+    display: none;
+  }
+
+}

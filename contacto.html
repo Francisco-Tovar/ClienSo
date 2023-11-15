@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto ClienSO</title>
+        <link rel="icon" href="favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <div class="fixed-top" style="background-color: #ffb335;">
+        <nav class="navbar navbar-expand-lg container" data-bs-theme="dark" style="background-color: #ffb335;">
+          <div class="container-fluid">        
+            <img src="images/ClienSo Logo.png" alt="logo" height="30"> 
+            <h1 class="navbar-brand mx-2 my-auto" style="font-size: 30px;">ClienSo</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                                
+              <ul class="navbar-nav" style="position: relative;">
+    
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="galeria.html">Galería</a>
+                </li>
+
+                <li class="nav-item me-2">
+                  <a class="nav-link espanol hidden" href="contacto.html">Contacto</a>                  
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+  <!-- CONTACTO -->
+  <div class="container-fluid gradient-background" id="contacto">
+    <div class="container px-4 py-5 text-center " id="icon-grid">
+      <div class="container px-4 py-5 text-center" id="icon-grid">
+        <img src="./images/ClienSo Logo.png" alt="logo blanco tovar ">
+        
+        <h2 class="pb-2 mt-4 blanco espanol hidden">Crearemos algo maravilloso juntos!</h2>
+        <p class="col-lg-8 mx-auto fs-5 text-muted naranja espanol hidden">Tiene algún proyecto en mente? <br> Hablemos y lo hacemos realidad!</p>
+
+        <hr>
+        <div class="container col-10 col-md-8 col-lg-6">
+          <!-- Contact Form -->
+          <form class="espanol hidden" action="https://formsubmit.co/fran.tovardev@gmail.com" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="Nuevo contacto desde ClienSO">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://frantovardev.github.io/PORTAFOLIO/gracias.html"> -->
+            <input type="hidden" name="_autoresponse" value="Recibimos tu mensaje y pronto estaremos en contacto!">            
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Correo-e" aria-describedby="emailHelp" required>            
+            </div>
+    
+            <div class="mb-3">
+              <input type="text" name="nombre" class="form-control" id="NombreInput" placeholder="Nombre" required>
+            </div>
+    
+            <div class="mb-3">
+              <input type="text" name="Mensaje" class="form-control" id="MensajeInput" placeholder="Mensaje" required>
+            </div>
+            <div id="emailHelp" class="form-text blanco ">
+              <p class="espanol hidden">Nunca divulgaremos su informacion con terceros</p>              
+            </div>
+                        
+            <br>
+            <button type="submit" class="btn shadow-lg  btn-primary espanol hidden">Enviar!</button>            
+          </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+<div style="background-color: #ffb335;" id="footer">
+
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 " data-bs-theme="dark">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-primary text-decoration-none lh-1">
+          <img src="./images/logo only.png" height="30">
+        </a>
+        <span class="mb-3 mb-md-0 px-3 text-body-primary espanol hidden"> Clienso, Inc © 2023<br> Todos los derechos reservados</span>      
+      </div>
+      <span class="mb-3 mb-md-0 text-body-primary" id="id-mail"> Support@ClienSO.co.cr</span>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        
+        
+       
+      </ul>
+    </footer>
+  
+  </div>
+</html>
