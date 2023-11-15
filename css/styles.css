@@ -186,12 +186,12 @@ hr{
   overflow: hidden;
   border-bottom: inset;
 }
-#footer {
+/* #footer {
   position:absolute;
   bottom:0;
+  top: 100%;
   width:100%;
-
-}
+} */
 
 
 @media (max-width: 1400px) {
